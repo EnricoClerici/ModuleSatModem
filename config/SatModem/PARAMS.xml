@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModuleParamConfig>
+
+<MODULE name="SATMODEM_BOA" version="1.0">
+
+    <TAG_DESC tag="ID" description="Satmodem ID on boa" unit="" type="INT">
+        <Range max="10" min="1"/>
+    </TAG_DESC>
+    <PARAM tag="ID" value="1"/>
+
+</MODULE>
+
+<MODULE name="SATMODEM_BASE" version="1.0">
+
+    <TAG_DESC tag="ID" description="Satmodem ID of base station" unit="" type="INT"/>
+    <PARAM tag="ID" value="0"/>
+
+</MODULE>
+
+</ModuleParamConfig>

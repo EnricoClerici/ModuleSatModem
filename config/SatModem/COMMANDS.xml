@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModuleCmdConfig>
+
+<MODULE version="1.0" name="SATMODEM_BASE">
+
+<CMDLIST type="SHELL">
+</CMDLIST>
+
+
+<CMDLIST type="MESSAGE">
+
+    <CMD description="Send broadcast request" id="SENDBCSTREQ" nParams ="1">
+        <PAR description="Payload" index="0"/>
+    </CMD>
+
+    <CMD description="Send broadcast command" id="SENDBCSTCMD" nParams ="1">
+        <PAR description="Payload" index="0"/>
+    </CMD>
+
+    <CMD description="Send single request" id="SENDSNGLREQ" nParams ="2">
+        <PAR description="Payload" index="0"/>
+        <PAR description="Destination" index="1" >
+            <REAL>
+                <Range min="1" max="10"/>
+            </REAL>
+        </PAR>
+    </CMD>
+
+    <CMD description="Send single command" id="SENDSNGLCMD" nParams ="2">
+        <PAR description="Payload" index="0"/>
+        <PAR description="Destination" index="1" >
+            <REAL>
+                <Range min="1" max="10"/>
+            </REAL>
+        </PAR>
+    </CMD>
+
+</CMDLIST>
+
+
+<CMDLIST type="STATUS">
+
+    <CMD description="Queue status request" id="QUSTATUSREQ" nParams ="0"/>
+
+</CMDLIST>
+
+
+<CMDLIST type="CONFIG">
+
+    <CMD description="Devices discovery" id="CFGRQDISCOVERY" nParams ="1">
+        <PAR description="Time" index="0"/>
+    </CMD>
+
+    <CMD description="Set queue size" id="CFGRQSETQUSIZE" nParams ="4">
+        <PAR description="Broadcast request queue" index="0"/>
+        <PAR description="Broadcast command queue" index="1"/>
+        <PAR description="Single request queue" index="2"/>
+        <PAR description="Single command queue" index="3"/>
+    </CMD>
+
+    <CMD description="Set queue size" id="CFGRQGETQUSIZE" nParams ="0"/>
+
+</CMDLIST>
+
+</MODULE>
+
+<MODULE version="1.0" name="SATMODEM_BOA"/>
+
+</ModuleCmdConfig>
